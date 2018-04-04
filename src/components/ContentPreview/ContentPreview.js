@@ -383,6 +383,7 @@ class ContentPreview extends PureComponent<Props, State> {
             return;
         }
 
+        if (typeof global.Box === 'undefined') return;
         const { Preview } = global.Box;
 
         const previewOptions = {
